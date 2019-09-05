@@ -13,7 +13,7 @@ chmod +x NessusComplianceParser.sh
 
 [TODO]
 
-1. Cosmetic changed, make table Center + white font and with bg color 
+1. Cosmetic changes, make table Center + white font and with bg color 
 
 2. Remove WARNING from output
 
