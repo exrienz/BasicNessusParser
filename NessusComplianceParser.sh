@@ -22,6 +22,6 @@ echo "<html><table>" > $1.html
 #compliance_score $1 "PASSED"
 #compliance_score $1 "FAILED"
 #compliance_score $1 "WARNING"
-cat sanitized.txt | sed -e 's/^/<tr><td>/' | sed s'/.$/]<\/td><\/tr>/' | sed 's/ /<\/td><td>/' | sed -r 's/(.*) /\1<\/td><td align="center">/' | sed 's/\[PASSED\]/PASS/' | sed 's/\[FAILED\]/FAIL/' | sed 's/\[WARNING\]/WARNING/' >> $1.html
+cat sanitized.txt | sed -e 's/^/<tr><td>/' | sed s'/.$/]<\/td><\/tr>/' | sed 's/ /<\/td><td>/' | sed -r 's/(.*) /\1<\/td><td align="center">/' | sed 's/\[PASSED\]/PASSED/' | sed 's/\[FAILED\]/FAILED/' | sed 's/\[WARNING\]/WARNING/' >> $1.html
 rm $1.txt sanitized.txt number.txt
 echo "</table></html>" >> $1.html
